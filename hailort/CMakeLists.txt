@@ -131,8 +131,3 @@ endif()
 if(HAILO_SUPPORT_PACKAGING)
     add_subdirectory(packaging)
 endif()
-
-# Compile PCIe Driver if QNX
-if(CMAKE_SYSTEM_NAME STREQUAL QNX)
-    add_subdirectory(drivers/qnx)
-endif()
